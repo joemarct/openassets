@@ -142,6 +142,7 @@ class ColoringEngine(object):
 
         # Add the issuance outputs
         issuance_asset_id = cls.hash_script(bytes(inputs[0].script))
+        print(issuance_asset_id)
 
         for i in range(0, marker_output_index):
             value, script = outputs[i].nValue, outputs[i].scriptPubKey
